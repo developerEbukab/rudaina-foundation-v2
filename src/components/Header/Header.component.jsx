@@ -15,17 +15,17 @@ const Header = ({ currentUser, history }) => {
   console.log("HEADER HISTORY", history.location.pathname )
   return (
     <div className="header">
-      {/*history.location.pathname !== "/dashboard" ?
+      {history.location.pathname !== "/dashboard" ?
         <Link to="/" className="logoLinkBig">
           <img className="imgBig" alt="" src="./img/rudainafoundationlogo.png" /> 
         </Link> :
         <Link to="/" className="logoLink">
           <img className="imgSmall" alt="" src="favicon.ico"/>
         </Link>
-      */}
-      <Link to="/" className="logoLink">
+      }
+      {/* <Link to="/" className="logoLink">
         <img className="imgSmall" alt="" src="favicon.ico"/>
-      </Link>
+      </Link> */}
       <div className="header__links">
         <NavLink to="/about" className="header__links--link" activeClassName="header__links--link--active">About</NavLink>
         <NavLink to="/resources" className="header__links--link" activeClassName="header__links--link--active">Resources</NavLink>
