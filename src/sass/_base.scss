@@ -41,13 +41,127 @@ body {
     // background-color: $color-grey-light;
     background-color: $color-white;
     box-shadow: $shadow-dark;
+    overflow-y: scroll;
+    position: relative;
+
+    @include respond(tab-land){
+        height:100vh;
+        width: 100vw;
+    }
+
+    @include respond(phone){
+        height:100vh;
+        width: 100vw;
+    }
 
     &__content{
-        height: 92%;
+        // height: 92%;
         width: 100%;
         // background-color: blue;
         // background-color: green;
-        overflow-y: scroll;
+        // overflow-y: scroll;
+    }
+}
+
+.Modal {
+    // background-color: red;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    z-index: 1000;
+    grid-template-columns: 30% 1fr;
+
+    @include respond(phone){
+        grid-template-columns: 50% 1fr;
+    }
+    
+
+    .OptionsContainer{
+        background-color: $color-secondary;
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        // height: 100%;
+        // padding-left: 1rem;
+
+        .DonateHighlight{
+            background-color: $color-primary;
+            font-weight: bold;
+
+            i{
+                color: $color-white;
+            }
+        }
+
+        .Option{
+            display: flex;
+            align-items: center;
+            display: grid;
+            grid-template-columns: 5rem 1fr;
+            padding: .5rem ;
+            padding-left: 1.5rem;
+            border-bottom: 1px solid lighten($color: $color-secondary, $amount: 4);
+            color: $color-white;
+
+            @include respond(phone){
+                font-size: 2rem;
+                padding: 1rem 0;
+                padding-left: 1.5rem;
+            }
+
+            .thumbnail{
+                height: 5rem;
+                width: 5rem;
+                display: flex;
+                justify-content: center;
+                background-color: $color-white;
+                color: $color-black;
+                font-weight: bold;
+                font-size: 2.2rem;
+                align-items: center;
+                border-radius: 1000rem;
+                margin-right: 1rem;
+                transition: all .2s ease-in-out;
+                margin-right: 1rem;
+              }
+        
+              img{
+                height: 5rem;
+                width: 5rem;
+                border-radius: 1000rem;
+                margin-right: 1rem;
+                transition: all .2s ease-in-out;
+                margin-right: 10rem;
+              }
+
+            .ActiveLink{
+                font-weight: bold;
+                color: $color-primary;
+            }
+
+            a{
+                color: $color-white;
+            }
+
+            i{
+                margin-right: 1rem;
+                color: grey;
+            }
+
+            &:hover{
+                background-color: darken($color: $color-secondary, $amount: 10);
+            }
+        }
+
+        .OptionUser{
+            grid-template-columns: 7rem 1fr;
+            padding: 1rem 0 1rem 1.5rem;
+        }
+    }
+
+    .Backdrop{
+        background-color: rgba($color: #000000, $alpha: .3);
     }
 }
 
@@ -145,4 +259,43 @@ input:-webkit-autofill:active  {
     font-weight: bold;
 }
 
+.ShowOnMobile{
+    display: none;
+}
+
+.ShowOnTabLand{
+    display: none;
+}
+
+
+@include respond(tab-land){
+    .ShowOnTabLand{
+        display: block;
+    }
+    .HideOnTabLand{
+        display: none;
+    }
+}
+
+@include respond(phone){
+    .ShowOnMobile{
+        display: block;
+    }
+    .HideOnMobile{
+        display: none;
+    }
+}
+
+.FilledButton{
+    padding: 1rem 2rem;
+    background-color: $color-primary;
+    color: $color-white;
+    display: inline-block;
+}
+
+@include respond(tab-land){
+}
+
+@include respond(phone){
+}
 

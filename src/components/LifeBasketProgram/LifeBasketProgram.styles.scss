@@ -3,13 +3,22 @@
 
 .lifeBasketProgramContainer{
   @include horizontal-gutter;
+  padding: 0 3vw;
   background-color: $color-white;
+  // background-color: red;
   // clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
   // clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
 
   // background-color: purple;
   // clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
 
+  @include respond(tab-land){
+    padding: 0 ;
+  }
+
+  @include respond(phone){
+    padding: 0 ;
+  }
 
   .lifeBasketProgram{
     // background-color: red;
@@ -17,56 +26,144 @@
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 20vh 0 20vh 0;
+    padding: 26vh 0 23vh 0;
     margin-top: -10vh;
     // height: 100rem;
+
+    @include respond(tab-land){
+      flex-direction: column;
+      padding: 26vh 0 10vh 0;
+    }
+    
+    @include respond(phone){
+      padding: 26vh 0 15vh 0;
+    }
 
     .basket{
       width: 60%;
       // background-color: blue;
 
+      img{
+        box-shadow: 0 0 4rem $color-black;
+      }
+
+      @include respond(tab-land){
+        flex-direction: column;
+        width: auto;
+      }
+
+      @include respond(auto){
+        flex-direction: column;
+        width: auto;
+      }
+
       .basket-info-image-large{
-        width: 60rem;
-        height: 60rem;
+        width: 40vw;
+        height: 40vw;
         padding: 1rem;
         @include borderRadius(1000rem);
         background-color: grey;
         position: relative;
         z-index: 10;
+        box-shadow: 0 0 4rem $color-black;
+
+        @include respond(tab-land){
+          width: 45vw;
+          height: 40vw;
+          @include borderRadius(1rem);
+        }
+  
+        @include respond(phone){
+          width: 45vw;
+          height: 40vw;
+          @include borderRadius(1rem);
+        }
   
         .basket-info-image-medium{
-          width: 40rem;
-          height: 40rem;
+          width: 25vw;
+          height: 25vw;
           padding: .5rem;
           border-top: 4px solid red;
           border-bottom: 4px solid red;
           @include borderRadius(1000rem);
-          @include  translate(90%, -20%);
+          @include  translate(100%, -30%);
           position: relative;
           z-index: 2;
+
+          @include respond(tab-land){
+            width: 28vw;
+            height: 28vw;
+            @include borderRadius(1rem);
+            border-top: 0px solid red;
+            border-bottom: 0px solid red;
+            @include  translate(-85%, 20%);
+          }
+
+          @include respond(phone){
+            width: 30vw;
+            height: 30vw;
+            @include borderRadius(1rem);
+            border-top: 0px solid red;
+            border-bottom: 0px solid red;
+            @include  translate(-90%, 20%);
+          }
   
           img{
             width: 100%;
             height: 100%;
             @include borderRadius(1000rem);
+
+            @include respond(tab-land){
+              @include borderRadius(1rem);
+            }
+
+            @include respond(phone){
+              @include borderRadius(1rem);
+            }
           }
         }
   
         .basket-info-image-small{
-          width: 30rem;
-          height: 30rem;
+          width: 20vw;
+          height: 20vw;
           padding: .5rem;
           border-right: 4px solid red;
           border-left: 4px solid red;
           @include borderRadius(1000rem);
-          @include translate(80%, -10%);
+          @include translate(80%, 5%);
           position: relative;
           z-index: 3;
+
+          @include respond(tab-land){
+            width: 28vw;
+            height: 28vw;
+            @include borderRadius(1rem);
+            border-right: 0px solid red;
+            border-left: 0px solid red;
+            @include  translate(140%, -80%);
+          }
+
+          @include respond(phone){
+            width: 30vw;
+            height: 30vw;
+            @include borderRadius(1rem);
+            border-top: 0px solid red;
+            border-bottom: 0px solid red;
+            @include  translate(130%, -80%);
+          }
           
           img{
             width: 100%;
             height: 100%;
             @include borderRadius(1000rem);
+
+            @include respond(tab-land){
+              @include borderRadius(1rem);
+            }
+
+            @include respond(phone){
+              @include borderRadius(1rem);
+            }
           }
         }
       }
@@ -79,6 +176,27 @@
       // padding: 2rem;
       // @include borderRadius(1rem);
       // border : 3px solid $color-primary;
+
+      .BasketTitle{
+
+      }
+
+      @include respond(tab-land){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+        width: 70%;
+      }
+
+      @include respond(phone){
+        width: 100%;
+        padding: 0 1rem;
+
+        .BasketTitle{
+          font-size: 2.6rem;
+        }
+      }
 
       .title{ 
       }

@@ -1,0 +1,156 @@
+.moreInfoContainer {
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+  margin-top: -10rem;
+  padding: 15rem 0 15rem 0;
+  background-color: #F7F7F7;
+  background-color: #2D2D2D;
+}
+@media only screen and (max-width: 75em) {
+  .moreInfoContainer {
+    padding: 15rem 0 5rem 0;
+    clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .moreInfoContainer {
+    margin-top: -6rem;
+    clip-path: polygon(0 2%, 100% 0%, 100% 98%, 0% 100%);
+  }
+}
+.moreInfoContainer .MainTitle {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.moreInfoContainer .moreInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 5rem 0;
+  width: 90%;
+}
+@media only screen and (min-width: 112.5em) {
+  .moreInfoContainer .moreInfo .first {
+    transform: translate(0, 9rem);
+    -webkit-transform: translate(0, 9rem);
+    -moz-transform: translate(0, 9rem);
+    -ms-transform: translate(0, 9rem);
+    -o-transform: translate(0, 9rem);
+  }
+  .moreInfoContainer .moreInfo .last {
+    transform: translate(0, 2rem);
+    -webkit-transform: translate(0, 2rem);
+    -moz-transform: translate(0, 2rem);
+    -ms-transform: translate(0, 2rem);
+    -o-transform: translate(0, 2rem);
+  }
+  .moreInfoContainer .moreInfo .middle {
+    transform: translate(0, -4.5rem);
+    -webkit-transform: translate(0, -4.5rem);
+    -moz-transform: translate(0, -4.5rem);
+    -ms-transform: translate(0, -4.5rem);
+    -o-transform: translate(0, -4.5rem);
+  }
+}
+@media only screen and (max-width: 75em) {
+  .moreInfoContainer .moreInfo {
+    width: 98%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .moreInfoContainer .moreInfo {
+    width: 98%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.moreInfoContainer .moreInfo .infoItem {
+  width: 30%;
+  height: 40rem;
+  padding: 0 1.5rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  box-shadow: 0px 0px 4rem #000;
+  background-color: #F7F7F7;
+}
+@media only screen and (max-width: 75em) {
+  .moreInfoContainer .moreInfo .infoItem {
+    width: 50%;
+    margin-bottom: 10%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .moreInfoContainer .moreInfo .infoItem {
+    width: 93%;
+    margin-bottom: 25%;
+    height: 50rem;
+  }
+}
+.moreInfoContainer .moreInfo .infoItem:hover {
+  box-shadow: 1px 0px 6px 3px #e6e6e6;
+}
+.moreInfoContainer .moreInfo .infoItem:hover .imgContainer {
+  transform: translate(0, -18%);
+  -webkit-transform: translate(0, -18%);
+  -moz-transform: translate(0, -18%);
+  -ms-transform: translate(0, -18%);
+  -o-transform: translate(0, -18%);
+}
+.moreInfoContainer .moreInfo .infoItem .imgContainer {
+  width: 100%;
+  height: 60%;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  overflow: hidden;
+  transform: translate(0, -13%);
+  -webkit-transform: translate(0, -13%);
+  -moz-transform: translate(0, -13%);
+  -ms-transform: translate(0, -13%);
+  -o-transform: translate(0, -13%);
+}
+.moreInfoContainer .moreInfo .infoItem .imgContainer img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+.moreInfoContainer .moreInfo .infoItem .moreInfoText {
+  width: 100%;
+  height: 40%;
+  transform: translate(0, -15%);
+  -webkit-transform: translate(0, -15%);
+  -moz-transform: translate(0, -15%);
+  -ms-transform: translate(0, -15%);
+  -o-transform: translate(0, -15%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.moreInfoContainer .moreInfo .infoItem .moreInfoText .title {
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  padding-bottom: 3px;
+  position: relative;
+  margin-bottom: 1rem;
+}

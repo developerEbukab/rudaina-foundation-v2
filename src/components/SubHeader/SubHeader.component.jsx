@@ -7,13 +7,13 @@ const SubHeader = () => {
     <div className="SubheaderContainer">
       <div className="Subheader">
         <div className="ctaBox">
-          <p className="slogan">We are <span className="different">Trying</span> to make a</p>
+          <p className="slogan">Help us <span className="different">Try</span> to make a</p>
           <p className="slogan"><span className="different modify">Difference</span></p>
           <p className="text">
-            Behind our charity is a community of amazing people like you !
+            If you are expecting a newborn, learn how you can become a benefactor and start receiving support through your pregnancy.
           </p>
           <div className="buttonContainer">
-            <Link to="volunteer" className="button">Learn More</Link>
+            <Link to="/program" className="button">Learn More</Link>
           </div>
         </div>
         <div className="imageBox">

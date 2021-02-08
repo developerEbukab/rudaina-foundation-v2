@@ -38,14 +38,14 @@ const Footer = () => {
       <div className="footer ">
         <div className="footer-info">
           <div className="footer-text">
-            <p className="title">Rudaina Foundation</p>
+            <h2 className="FooterTitle HideOnMobile">Rudaina Foundation</h2>
             <p className="footerSection_aboutText">
               Rudaina Foundation is a Canadian charity devoted to helping pregnant women.Our Community Program will introduce professionals like registered nurses, nutritionists, doctors, midwives and therapists to an online message board available for instant access to our beneficiaries.
             </p>
             
           </div>
           <div className="footer-contact">
-            <p className="title">Let's keep in touch!</p>
+            <h2 className="FooterTitle">Let's keep in touch!</h2>
             <p className="title-subText">
               Here at Rudaina Foundation we are always up to something .Find us on any of these platforms to see what we are up to , current event , etc. Also you can join our mailing list !
             </p>
@@ -75,7 +75,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footerLinks-copyright">
-          <p>© {new Date().getFullYear()} Rudaina Foundation - <span className="hideOnSmallScreen">Charitable Registration Number : 118830983 RR0001.</span> </p>
+          <p>© {new Date().getFullYear()} Rudaina Foundation - <span className="hideOnSmallScreen">Charitable Registration Number : 792154882 RR 0001.</span> </p>
           {/*<a href="/privacy-policy" target="_blank">Privacy</a>
           <a href="/terms-of-service" target="_blank">Terms</a>
           <a href="/accesibility" target="_blank">Accessibility</a>*/}

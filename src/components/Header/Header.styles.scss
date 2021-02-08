@@ -9,16 +9,44 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  // background-color: red;
+
+  i{
+    font-size: 4rem;
+    color: $color-primary;
+  }
+
   @include horizontal-gutter;
+
+  @include respond(tab-land){
+  }
+
+  @include respond(phone){
+    padding: 0 2vw;
+
+    i{
+      transform: translateY(65%);
+    }
+  }
 
   .logoLinkBig{
     width: 35vw;
     height: 160%;
     z-index: 30;
-    transform: translateY(25%);
+    transform: translateY(38%);
     background-color: $color-white;
     // display: flex;
     // align-items: flex-end;
+    // background-color: red;
+
+    @include respond(tab-land){
+      width: 50vw;
+    }
+  
+    @include respond(phone){
+      width: 90vw;
+      transform: translate(2%,25%);
+    }
 
     img{
       width: 100%;

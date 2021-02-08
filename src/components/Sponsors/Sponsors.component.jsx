@@ -13,6 +13,7 @@ const Sponsor = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
+    arrows: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -44,14 +45,14 @@ const Sponsor = () => {
   return (
     <div className="sponsorsContainer">
       <div className="sponsors">
-        <h1 className="bigThanksText">A <span className="bold">BIG</span> thanks to our Supporters!</h1>
+        <h1 className="bigThanksText"><span className="bold">BIG</span> thanks to our Supporters!</h1>
         <div>
           <Slider {...settings}>
-            <a target="_blank" href="https://www.greenenergystandards.ca/">
+            {/* <a target="_blank" href="https://www.greenenergystandards.ca/">
               <div className="sponsorImage">
                 <img src="/img/egs.png"/>
               </div>
-            </a>
+            </a> */}
             <a target="_blank" href="https://tcccanada.com/">
               <div className="sponsorImage">
                 <img src="/img/tcc.png"/>
@@ -67,11 +68,21 @@ const Sponsor = () => {
                 <img src="/img/CCSJ2018.png"/>
               </div>
             </a>
-            <a target="_blank" href="http://www.wiseottawa.ca/">
+            <a target="_blank" href="https://www.canada.ca/en/employment-social-development/services/funding/canada-summer-jobs.html">
+              <div className="sponsorImage">
+                <img src="/img/csj19.jpg"/>
+              </div>
+            </a>
+            <a target="_blank" href="https://www.canada.ca/en/employment-social-development/services/funding/canada-summer-jobs.html">
+              <div className="sponsorImage">
+                <img src="/img/csj2020.png"/>
+              </div>
+            </a>
+            {/* <a target="_blank" href="http://www.wiseottawa.ca/">
               <div className="sponsorImage">
                 <img src="/img/wise ifse.png"/>
               </div>
-            </a>
+            </a> */}
           </Slider>
         </div>
       </div>

@@ -1,0 +1,274 @@
+.lifeBasketProgramContainer {
+  padding: 0 5vw;
+  padding: 0 3vw;
+  background-color: #fff;
+}
+@media only screen and (max-width: 75em) {
+  .lifeBasketProgramContainer {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .lifeBasketProgramContainer {
+    padding: 0;
+  }
+}
+.lifeBasketProgramContainer .lifeBasketProgram {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 26vh 0 23vh 0;
+  margin-top: -10vh;
+}
+@media only screen and (max-width: 75em) {
+  .lifeBasketProgramContainer .lifeBasketProgram {
+    flex-direction: column;
+    padding: 26vh 0 10vh 0;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .lifeBasketProgramContainer .lifeBasketProgram {
+    padding: 26vh 0 15vh 0;
+  }
+}
+.lifeBasketProgramContainer .lifeBasketProgram .basket {
+  width: 60%;
+}
+.lifeBasketProgramContainer .lifeBasketProgram .basket img {
+  box-shadow: 0 0 4rem #000;
+}
+@media only screen and (max-width: 75em) {
+  .lifeBasketProgramContainer .lifeBasketProgram .basket {
+    flex-direction: column;
+    width: auto;
+  }
+}
+.lifeBasketProgramContainer .lifeBasketProgram .basket .basket-info-image-large {
+  width: 40vw;
+  height: 40vw;
+  padding: 1rem;
+  border-radius: 1000rem;
+  -webkit-border-radius: 1000rem;
+  -moz-border-radius: 1000rem;
+  -ms-border-radius: 1000rem;
+  -o-border-radius: 1000rem;
+  background-color: grey;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 0 4rem #000;
+}
+@media only screen and (max-width: 75em) {
+  .lifeBasketProgramContainer .lifeBasketProgram .basket .basket-info-image-large {
+    width: 45vw;
+    height: 40vw;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .lifeBasketProgramContainer .lifeBasketProgram .basket .basket-info-image-large {
+    width: 45vw;
+    height: 40vw;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+  }
+}
+.lifeBasketProgramContainer .lifeBasketProgram .basket .basket-info-image-large .basket-info-image-medium {
+  width: 25vw;
+  height: 25vw;
+  padding: 0.5rem;
+  border-top: 4px solid red;
+  border-bottom: 4px solid red;
+  border-radius: 1000rem;
+  -webkit-border-radius: 1000rem;
+  -moz-border-radius: 1000rem;
+  -ms-border-radius: 1000rem;
+  -o-border-radius: 1000rem;
+  transform: translate(100%, -30%);
+  -webkit-transform: translate(100%, -30%);
+  -moz-transform: translate(100%, -30%);
+  -ms-transform: translate(100%, -30%);
+  -o-transform: translate(100%, -30%);
+  position: relative;
+  z-index: 2;
+}
+@media only screen and (max-width: 75em) {
+  .lifeBasketProgramContainer .lifeBasketProgram .basket .basket-info-image-large .basket-info-image-medium {
+    width: 28vw;
+    height: 28vw;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    border-top: 0px solid red;
+    border-bottom: 0px solid red;
+    transform: translate(-85%, 20%);
+    -webkit-transform: translate(-85%, 20%);
+    -moz-transform: translate(-85%, 20%);
+    -ms-transform: translate(-85%, 20%);
+    -o-transform: translate(-85%, 20%);
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .lifeBasketProgramContainer .lifeBasketProgram .basket .basket-info-image-large .basket-info-image-medium {
+    width: 30vw;
+    height: 30vw;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    border-top: 0px solid red;
+    border-bottom: 0px solid red;
+    transform: translate(-90%, 20%);
+    -webkit-transform: translate(-90%, 20%);
+    -moz-transform: translate(-90%, 20%);
+    -ms-transform: translate(-90%, 20%);
+    -o-transform: translate(-90%, 20%);
+  }
+}
+.lifeBasketProgramContainer .lifeBasketProgram .basket .basket-info-image-large .basket-info-image-medium img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1000rem;
+  -webkit-border-radius: 1000rem;
+  -moz-border-radius: 1000rem;
+  -ms-border-radius: 1000rem;
+  -o-border-radius: 1000rem;
+}
+@media only screen and (max-width: 75em) {
+  .lifeBasketProgramContainer .lifeBasketProgram .basket .basket-info-image-large .basket-info-image-medium img {
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .lifeBasketProgramContainer .lifeBasketProgram .basket .basket-info-image-large .basket-info-image-medium img {
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+  }
+}
+.lifeBasketProgramContainer .lifeBasketProgram .basket .basket-info-image-large .basket-info-image-small {
+  width: 20vw;
+  height: 20vw;
+  padding: 0.5rem;
+  border-right: 4px solid red;
+  border-left: 4px solid red;
+  border-radius: 1000rem;
+  -webkit-border-radius: 1000rem;
+  -moz-border-radius: 1000rem;
+  -ms-border-radius: 1000rem;
+  -o-border-radius: 1000rem;
+  transform: translate(80%, 5%);
+  -webkit-transform: translate(80%, 5%);
+  -moz-transform: translate(80%, 5%);
+  -ms-transform: translate(80%, 5%);
+  -o-transform: translate(80%, 5%);
+  position: relative;
+  z-index: 3;
+}
+@media only screen and (max-width: 75em) {
+  .lifeBasketProgramContainer .lifeBasketProgram .basket .basket-info-image-large .basket-info-image-small {
+    width: 28vw;
+    height: 28vw;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    border-right: 0px solid red;
+    border-left: 0px solid red;
+    transform: translate(140%, -80%);
+    -webkit-transform: translate(140%, -80%);
+    -moz-transform: translate(140%, -80%);
+    -ms-transform: translate(140%, -80%);
+    -o-transform: translate(140%, -80%);
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .lifeBasketProgramContainer .lifeBasketProgram .basket .basket-info-image-large .basket-info-image-small {
+    width: 30vw;
+    height: 30vw;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    border-top: 0px solid red;
+    border-bottom: 0px solid red;
+    transform: translate(130%, -80%);
+    -webkit-transform: translate(130%, -80%);
+    -moz-transform: translate(130%, -80%);
+    -ms-transform: translate(130%, -80%);
+    -o-transform: translate(130%, -80%);
+  }
+}
+.lifeBasketProgramContainer .lifeBasketProgram .basket .basket-info-image-large .basket-info-image-small img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1000rem;
+  -webkit-border-radius: 1000rem;
+  -moz-border-radius: 1000rem;
+  -ms-border-radius: 1000rem;
+  -o-border-radius: 1000rem;
+}
+@media only screen and (max-width: 75em) {
+  .lifeBasketProgramContainer .lifeBasketProgram .basket .basket-info-image-large .basket-info-image-small img {
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .lifeBasketProgramContainer .lifeBasketProgram .basket .basket-info-image-large .basket-info-image-small img {
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+  }
+}
+.lifeBasketProgramContainer .lifeBasketProgram .description {
+  width: 40%;
+}
+@media only screen and (max-width: 75em) {
+  .lifeBasketProgramContainer .lifeBasketProgram .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .lifeBasketProgramContainer .lifeBasketProgram .description {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .lifeBasketProgramContainer .lifeBasketProgram .description .BasketTitle {
+    font-size: 2.6rem;
+  }
+}
+.lifeBasketProgramContainer .lifeBasketProgram .description .textContainer {
+  margin: 3rem 0;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}

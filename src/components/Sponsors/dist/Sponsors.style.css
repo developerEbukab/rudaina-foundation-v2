@@ -1,0 +1,39 @@
+.sponsorsContainer {
+  padding: 0 5vw;
+  width: 100%;
+}
+.sponsorsContainer .sponsors {
+  width: 100%;
+  padding: 3rem 0 10rem 0;
+}
+.sponsorsContainer .sponsors .sponsorImage {
+  width: 90%;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sponsorsContainer .sponsors .sponsorImage img {
+  height: 90%;
+  width: 100%;
+}
+.sponsorsContainer .sponsors img {
+  text-align: center;
+  height: 15rem;
+  width: 90%;
+}
+.sponsorsContainer .sponsors .bigThanksText {
+  text-align: center;
+  color: #000;
+  margin-bottom: 5rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .sponsorsContainer .sponsors .bigThanksText {
+    font-size: 2.7rem;
+  }
+}
+.sponsorsContainer .sponsors .bigThanksText .bold {
+  color: #FF0243;
+  font-size: 5rem;
+  margin: 0 1rem;
+}

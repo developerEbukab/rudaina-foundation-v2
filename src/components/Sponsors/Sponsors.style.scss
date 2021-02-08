@@ -4,8 +4,10 @@
 .sponsorsContainer{
   @include layout-padded;
   // background-color: $color-grey-light;
+  // background-color: red;
+  width: 100%;
   .sponsors{
-    
+    width: 100%;
     padding: 3rem 0 10rem 0;
 
     .sponsorImage{
@@ -45,6 +47,13 @@
       // position: relative;
       // //margin-bottom: 1rem;
       // @include underline;
+
+      @include respond(tab-land){
+      }
+      
+      @include respond(phone){
+        font-size: 2.7rem;
+      }
     
       .bold{
         color : $color-primary;

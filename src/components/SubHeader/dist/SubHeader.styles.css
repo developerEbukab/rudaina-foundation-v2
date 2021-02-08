@@ -1,0 +1,142 @@
+.SubheaderContainer {
+  background-color: #fff;
+}
+.SubheaderContainer .Subheader {
+  height: 90vh;
+  padding: 0 5vw;
+  padding-top: 3rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 75em) {
+  .SubheaderContainer .Subheader {
+    width: 100%;
+    height: auto;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 5% 0 10% 0;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .SubheaderContainer .Subheader {
+    width: 100%;
+    height: auto;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 5% 0 10% 0;
+  }
+}
+.SubheaderContainer .Subheader .imageBox {
+  height: 40vw;
+  width: 50vw;
+  border-radius: 100rem;
+  -webkit-border-radius: 100rem;
+  -moz-border-radius: 100rem;
+  -ms-border-radius: 100rem;
+  -o-border-radius: 100rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .SubheaderContainer .Subheader .imageBox {
+    height: 70vw;
+    width: 80vw;
+  }
+}
+.SubheaderContainer .Subheader .imageBox img {
+  width: 100%;
+  height: 100%;
+}
+.SubheaderContainer .Subheader .ctaBox {
+  font-size: 2rem;
+  padding: 2rem;
+  padding-top: 12%;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+@media only screen and (max-width: 75em) {
+  .SubheaderContainer .Subheader .ctaBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .SubheaderContainer .Subheader .ctaBox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4%;
+    padding-bottom: 15%;
+  }
+}
+.SubheaderContainer .Subheader .ctaBox .slogan {
+  font-size: 5rem;
+  word-spacing: 0.7rem;
+  font-weight: bold;
+  position: relative;
+}
+@media only screen and (max-width: 37.5em) {
+  .SubheaderContainer .Subheader .ctaBox .slogan {
+    word-spacing: 0.1rem;
+    font-size: 3rem;
+  }
+}
+.SubheaderContainer .Subheader .ctaBox .slogan .different {
+  position: relative;
+  transform: translate(-1rem, 0);
+  -webkit-transform: translate(-1rem, 0);
+  -moz-transform: translate(-1rem, 0);
+  -ms-transform: translate(-1rem, 0);
+  -o-transform: translate(-1rem, 0);
+  display: inline-block;
+  z-index: 20;
+  padding: 0 2rem;
+  clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+  background-image: linear-gradient(to right, rgba(255, 155, 181, 0.6), #ff0243);
+}
+.SubheaderContainer .Subheader .ctaBox .slogan .modify {
+  z-index: 1;
+  transform: translate(-2rem, -0.8rem);
+  -webkit-transform: translate(-2rem, -0.8rem);
+  -moz-transform: translate(-2rem, -0.8rem);
+  -ms-transform: translate(-2rem, -0.8rem);
+  -o-transform: translate(-2rem, -0.8rem);
+}
+.SubheaderContainer .Subheader .ctaBox .text {
+  width: 70rem;
+  word-spacing: 0.2rem;
+  margin: 2rem 0;
+}
+@media only screen and (max-width: 75em) {
+  .SubheaderContainer .Subheader .ctaBox .text {
+    width: 60%;
+    margin: 1rem 0;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .SubheaderContainer .Subheader .ctaBox .text {
+    width: 100%;
+    text-align: center;
+  }
+}
+.SubheaderContainer .Subheader .ctaBox .buttonContainer {
+  display: flex;
+  font-weight: bold;
+}
+.SubheaderContainer .Subheader .ctaBox .buttonContainer .button {
+  padding-bottom: 0.5rem;
+  color: #FF0243;
+  border-bottom: 2px solid #FF0243;
+  transition: 0.2s all;
+}
+.SubheaderContainer .Subheader .ctaBox .buttonContainer .button:hover {
+  border-bottom: 5px solid #FF0243;
+  transform: translateY(-3px);
+}

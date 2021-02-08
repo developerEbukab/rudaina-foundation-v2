@@ -42,18 +42,33 @@ const HomePage_News = () => {
         <h1 className="Title">See what we're up to</h1>
         {(charityNews && pregnancyNews && relevantNews) && <div className="NewsContainer">
           {[charityNews.slice(-1).pop(), pregnancyNews.slice(-1).pop(), relevantNews.slice(-1).pop()].map(({ title, author, imageUrl, description, createdAtDate, eventId, externalLink }) => 
-          <News 
-            key={eventId} 
-            eventId={eventId}
-            title={title}  
-            author={author}
-            imageUrl={imageUrl}
-            description={description}
-            createdAtDate ={createdAtDate}
-            externalLink={externalLink}
-            selectedNews= {selectedNews}
-            setSelectedNews= {setSelectedNews}
-          />
+          <div className="News HomeNews" style={{color: "black"}}>
+            <div className={`${(selectedNews === eventId) ? "OverlayVisible" : "OverlayHidden"}`}>
+              <h3 className="NewsTitle">{title}</h3>
+              <p className="Description">{description}</p>
+              <div className="Footer">
+                <p><span className="Bold">Author : </span>{author}</p>
+                <p><span className="Bold">Date Posted : </span>{createdAtDate}</p>
+              </div>
+              <div className="Link">
+                <p onClick={()=>setSelectedNews(false)}  className="Close">Close</p>
+                <a href={externalLink} target="__blank" className="Link">View More</a>
+              </div>
+            </div>
+            <div className="Image">
+              <img alt="" src={imageUrl} />
+            </div>
+            <div className="Details" style={{padding: ".3rem 1rem 1rem 1rem"}}>
+              <div>
+                <h3 className="NewsTitle">{title}</h3>
+                <p>By, {author}</p>
+              </div>
+              <div className="Footer ">
+                <p onClick={()=>setSelectedNews(eventId)} className="Link" style={{backgroundColor: "#FF0243", color: "white"}}>More Info</p>
+                {/* <a onClick={()=>setSelectedNews(eventId)} href="http://www.google.com" target="__blank" className="Link">More Info</a> */}
+              </div>
+            </div>
+          </div>
           )}
         </div>}
       </div>

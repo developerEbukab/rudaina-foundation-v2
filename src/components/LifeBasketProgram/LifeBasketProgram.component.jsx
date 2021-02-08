@@ -7,7 +7,7 @@ const LifeBasketProgram = () => {
     <div className="lifeBasketProgramContainer">
       <div className="lifeBasketProgram">
         <div className="basket">
-          <div style={{ backgroundImage: "url(" + "https://images.unsplash.com/photo-1589476304891-49f5488b7840?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" + ")", backgroundRepeat : "no-repeat", backgroundSize : "100% 100%"}} className="basket-info-image-large">
+          <div style={{ backgroundImage: "url(" + "./img/trimester3.jpeg" + ")", backgroundRepeat : "no-repeat", backgroundSize : "100% 100%"}} className="basket-info-image-large">
             <div className="basket-info-image-medium">
               <img alt="" src="./img/community.jpeg"/>
             </div>
@@ -17,13 +17,13 @@ const LifeBasketProgram = () => {
           </div>
         </div>
         <div className="description">
-          <p className="mainTitle">Our Life Basket Program</p>
+          <h1 className="BasketTitle">Our Life Basket Program</h1>
           <div className="textContainer">
             <p className="text">
-              In 2018 we launched our Life Basket Program, where an expecting mother 
-              can register on our website to start receiving a “Life Baskets”, which 
-              will provide tailored information and gifts for each trimester. Contents 
-              of these baskets include:<br></br> <br></br>
+              In 2018, we launched our Life Basket Program where an expecting mother can register on our website to start receiving a “Life Basket”, which will provide tailored information and gifts for each trimester.<br></br> <br></br>
+            </p>
+            <p className="text">
+              By offering material items that may not otherwise be purchased, we aim to reduce stress for women during pregnancy and promote a more healthful environment for infant and mother. Contents of these baskets include but are not limited to:<br></br> <br></br>
             </p>
             <div className="listItems">
               <span className="bulletPoint">&#10061;</span>
@@ -38,7 +38,7 @@ const LifeBasketProgram = () => {
               <p>Comfort accessories, including back pillows, massagers, journals, and more!</p>
             </div>
           </div>
-          <Link to="/program" className="buttonUnderline">Learn More</Link>
+          <Link to="/program" className=""><p className="FilledButton">Learn More</p></Link>
         </div>
       </div>
     </div>
